@@ -1,4 +1,4 @@
-# test_granadine #
+# MiGranadine [PHP Microframework] (Test) #
 Esto pretende ser un mix entre 'limonade' (aunque usa más 'yesinteractive') con 'CodeIgniter3'
 
 ## Documentación asociada ##
