@@ -8,7 +8,7 @@ Esto pretende ser un mix entre 'limonade' (aunque usa más 'yesinteractive') con
 ###
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 ###
-¿Cómo le hago para implementar esto?
-En redacción...
+## Bien, ¿Cómo le hago para implementar esto?
+
 
 
