@@ -29,6 +29,17 @@ class Loader {
         return $this;
     }
 
+    // Permite devolver un enlace a websockets
+    // Nota: El servidor debe estar corriendo....
+    public function websocket($dir = "127.0.0.1", $port = 8081){
+        require_once __DIR__."/Websockets.php";
+
+        $this->CI->ws = new Websockets();
+
+        // se usa $this->CI->ws->WebsocketClient($dir, $port);
+        return $this->CI->ws;
+    }
+
     public function view($name, $data = []) {
         ob_start();
         $this->eval_viewdest($name, $data);
