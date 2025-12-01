@@ -6,4 +6,9 @@ pretende ser un mix entre limonade (aunque hay otro repo mejor) con CI3
 - [yesinteractive](https://github.com/yesinteractive/fsl/tree/master): casi todo se basará en esto.
 ###
 El resto es de CI3, asi que nada más que decir, solo iré subiendo las piezas que haga
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+###
+¿Cómo le hago para implementar esto?
+En redacción...
+
 

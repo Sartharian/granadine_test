@@ -13,7 +13,7 @@ $router->get('/usuarios', function() {
 
         $users = $CI->user_model->all();
 
-        $CI->load->view('verusuarios', [ 'items'=>$users ]);
+        $CI->load->view('verusuarios', [ 'items'=> $users ]);
     }catch(\Throwable $ex){
         echo $ex->stacktrace;
     }
