@@ -8,7 +8,7 @@ class App {
     public static $instance;
 
     protected array $props = [];
-
+    protected $begMetric = null;
     public $router;
     public $load;
     public $session;
@@ -19,6 +19,7 @@ class App {
         $this->router = new Router();
         $this->load   = new Loader();
         $this->session = new Session();
+        $this->input = new Input(new Security());
 
         define('APPPATH', dirname(__DIR__, 1).'/app/');
         require APPPATH.'routes.php';
