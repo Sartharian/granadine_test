@@ -30,19 +30,17 @@ class Loader {
         return $this->CI->ws;
     }
 
-    public function view($name, $layout = NULL, $data = []) {
-        if(is_string($layout) && $layout !== NULL){
-            extract($data);
-            include $this->eval_viewdest($layout);
+    // Permite devolver una vista e incrustarle un layoutpage
+    public function view($name, $layout = NULL, $data = []){
+        extract($data);
+        if(is_string($layout)){
             ob_start();
             include $this->eval_viewdest($name);
-            extract($data);
-            return ob_get_clean();
+            $content = ob_get_clean();
+            include $this->eval_viewdest($layout);
+            return; 
         }
-        extract($data);
         include $this->eval_viewdest($name);
-        ob_start();
-        return ob_get_clean();
     }
 }
 ?>
