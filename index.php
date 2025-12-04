@@ -11,6 +11,7 @@ require __DIR__.'/system/QueryBuilder.php';
 require __DIR__.'/system/Database.php';
 require __DIR__.'/system/Session.php';
 require __DIR__.'/system/Input.php';
+require __DIR__.'/system/Output.php';
 require __DIR__.'/system/Security.php';
 
 try{

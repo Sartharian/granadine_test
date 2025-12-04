@@ -12,6 +12,7 @@ class App {
     public $router;
     public $load;
     public $session;
+    public $output;
 
     public function __construct() {
         self::$instance = $this;
@@ -20,7 +21,7 @@ class App {
         $this->load   = new Loader();
         $this->session = new Session();
         $this->input = new Input(new Security());
-
+    $this->output = new Output(/*new Security() */);
         define('APPPATH', dirname(__DIR__, 1).'/app/');
         require APPPATH.'routes.php';
     }
